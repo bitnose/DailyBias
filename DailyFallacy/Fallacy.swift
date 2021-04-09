@@ -20,8 +20,13 @@ struct Fallacy: Identifiable {
     var orderNumber: Int
     var aliases : [String]
     var opposite: [Fallacy]
-    var answer: [String]?
-   // var categories: [Category]
+    var answers: [String]?
+    var categories: [Category]
+    
+    // This way the whole rest of your code doesn’t have to worry about Core Data’s optionality, and if you want to make changes to default values you can do it in a single file.
+    var wrappedAnswer: [String] {
+        answers ?? ["No answer for this one.."]
+    }
     
     
     

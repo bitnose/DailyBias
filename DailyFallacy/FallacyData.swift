@@ -30,7 +30,8 @@ As soon as you spot someone coming after you with an ad hominem argument, you ca
             image: "battle",
             orderNumber: 1,
             aliases: ["Personal attack", "Poisoning the well", "argumentum ad hominem in Latin"],
-            opposite: []),
+            opposite: [],
+            categories: [categories[5], categories[1], categories[3]]),
     
     Fallacy(title: "The Positive Thinking Fallacy",
             shortDescription: "The fallacy of attempting to refute an argument by attacking the opposition’s intelligence, morals, education, professional qualifications, personal character or reputation, using a corrupted negative argument from ethos.",
@@ -50,7 +51,8 @@ As soon as you spot someone coming after you with an ad hominem argument, you ca
             orderNumber: 2,
             aliases: ["Personal attack", "Poisoning the well", "argumentum ad hominem in Latin"],
             opposite: [],
-            answer: ["That's has nothing to do with the argument."]),
+            answers: ["That's has nothing to do with the argument."],
+            categories: [categories[1], categories[2], categories[3]]),
             
     Fallacy(title: "Throwing Good Money After Bad ",
             shortDescription: "The fallacy of attempting to refute an argument by attacking the opposition’s intelligence, morals, education, professional qualifications, personal character or reputation, using a corrupted negative argument from ethos.",
@@ -69,7 +71,8 @@ As soon as you spot someone coming after you with an ad hominem argument, you ca
             image: "Group 7",
             orderNumber: 3,
             aliases: ["Personal attack", "Poisoning the well", "argumentum ad hominem in Latin"],
-            opposite: []),
+            opposite: [],
+            categories: [categories[1], categories[2], categories[3]]),
     
     Fallacy(title: "TINA",
             shortDescription: "The fallacy of attempting to refute an argument by attacking the opposition’s intelligence, morals, education, professional qualifications, personal character or reputation, using a corrupted negative argument from ethos.",
@@ -88,7 +91,8 @@ As soon as you spot someone coming after you with an ad hominem argument, you ca
             image: "Group 11",
             orderNumber: 4,
             aliases: ["Personal attack", "Poisoning the well", "argumentum ad hominem in Latin"],
-            opposite: []),
+            opposite: [],
+            categories: [categories[1], categories[2], categories[3]]),
     
     
 

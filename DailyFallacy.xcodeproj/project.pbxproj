@@ -15,6 +15,9 @@
 		DD372E842618AF7900323B0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD372E832618AF7900323B0C /* Preview Assets.xcassets */; };
 		DD372E942618AF7A00323B0C /* DailyFallacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E932618AF7A00323B0C /* DailyFallacyTests.swift */; };
 		DD372E9F2618AF7A00323B0C /* DailyFallacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E9E2618AF7A00323B0C /* DailyFallacyUITests.swift */; };
+		DD393CB52620EFF600EC3F96 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CB42620EFF600EC3F96 /* Category.swift */; };
+		DD393CBA2620F2A500EC3F96 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CB92620F2A500EC3F96 /* CategoryData.swift */; };
+		DD393CBF2620F6AE00EC3F96 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CBE2620F6AE00EC3F96 /* CategoryView.swift */; };
 		DD3BF16C261A0D7400FBDE77 /* FallacyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */; };
 		DD3BF174261A17DE00FBDE77 /* FallacyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */; };
 		DD3BF17C261A34B700FBDE77 /* ExampleBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */; };
@@ -57,6 +60,9 @@
 		DD372E9A2618AF7A00323B0C /* DailyFallacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFallacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD372E9E2618AF7A00323B0C /* DailyFallacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFallacyUITests.swift; sourceTree = "<group>"; };
 		DD372EA02618AF7A00323B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD393CB42620EFF600EC3F96 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DD393CB92620F2A500EC3F96 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		DD393CBE2620F6AE00EC3F96 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyRowView.swift; sourceTree = "<group>"; };
 		DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyDetailView.swift; sourceTree = "<group>"; };
 		DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBubble.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3515EF2618FAFE0086F65B /* Fallacy.swift */,
+				DD393CB42620EFF600EC3F96 /* Category.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3515F82618FBDF0086F65B /* FallacyData.swift */,
+				DD393CB92620F2A500EC3F96 /* CategoryData.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 				DD428CEC2618B33B003AA614 /* FallacyView.swift */,
 				DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */,
 				DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */,
+				DD393CBE2620F6AE00EC3F96 /* CategoryView.swift */,
 				DD3BF185261A489400FBDE77 /* SettingsView.swift */,
 				DD3BF18D261EE64F00FBDE77 /* FallacyShowView.swift */,
 				DD3BF180261A381300FBDE77 /* FallacyHeaderView.swift */,
@@ -322,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3BF16C261A0D7400FBDE77 /* FallacyRowView.swift in Sources */,
+				DD393CBA2620F2A500EC3F96 /* CategoryData.swift in Sources */,
 				DD3515F02618FAFE0086F65B /* Fallacy.swift in Sources */,
 				DD3BF181261A381300FBDE77 /* FallacyHeaderView.swift in Sources */,
 				DD3BF174261A17DE00FBDE77 /* FallacyDetailView.swift in Sources */,
@@ -330,9 +340,11 @@
 				DD428CED2618B33B003AA614 /* FallacyView.swift in Sources */,
 				DD372E7F2618AF7700323B0C /* ContentView.swift in Sources */,
 				DD372E7D2618AF7700323B0C /* DailyFallacyApp.swift in Sources */,
+				DD393CB52620EFF600EC3F96 /* Category.swift in Sources */,
 				DD3BF199261F3B5000FBDE77 /* AnswerBubble.swift in Sources */,
 				DD3515F92618FBDF0086F65B /* FallacyData.swift in Sources */,
 				DD3BF186261A489400FBDE77 /* SettingsView.swift in Sources */,
+				DD393CBF2620F6AE00EC3F96 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
