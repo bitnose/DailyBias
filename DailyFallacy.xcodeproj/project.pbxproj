@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3515F02618FAFE0086F65B /* Fallacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3515EF2618FAFE0086F65B /* Fallacy.swift */; };
+		DD3515F92618FBDF0086F65B /* FallacyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3515F82618FBDF0086F65B /* FallacyData.swift */; };
 		DD372E7D2618AF7700323B0C /* DailyFallacyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E7C2618AF7700323B0C /* DailyFallacyApp.swift */; };
 		DD372E7F2618AF7700323B0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E7E2618AF7700323B0C /* ContentView.swift */; };
 		DD372E812618AF7900323B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD372E802618AF7900323B0C /* Assets.xcassets */; };
 		DD372E842618AF7900323B0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD372E832618AF7900323B0C /* Preview Assets.xcassets */; };
-		DD372E862618AF7900323B0C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E852618AF7900323B0C /* Persistence.swift */; };
-		DD372E892618AF7900323B0C /* DailyFallacy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD372E872618AF7900323B0C /* DailyFallacy.xcdatamodeld */; };
 		DD372E942618AF7A00323B0C /* DailyFallacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E932618AF7A00323B0C /* DailyFallacyTests.swift */; };
 		DD372E9F2618AF7A00323B0C /* DailyFallacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD372E9E2618AF7A00323B0C /* DailyFallacyUITests.swift */; };
+		DD3BF16C261A0D7400FBDE77 /* FallacyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */; };
+		DD3BF174261A17DE00FBDE77 /* FallacyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */; };
+		DD3BF17C261A34B700FBDE77 /* ExampleBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */; };
+		DD3BF181261A381300FBDE77 /* FallacyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF180261A381300FBDE77 /* FallacyHeaderView.swift */; };
+		DD3BF186261A489400FBDE77 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF185261A489400FBDE77 /* SettingsView.swift */; };
+		DD3BF18E261EE64F00FBDE77 /* FallacyShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF18D261EE64F00FBDE77 /* FallacyShowView.swift */; };
+		DD3BF199261F3B5000FBDE77 /* AnswerBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF198261F3B5000FBDE77 /* AnswerBubble.swift */; };
+		DD428CED2618B33B003AA614 /* FallacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD428CEC2618B33B003AA614 /* FallacyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD3515EF2618FAFE0086F65B /* Fallacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fallacy.swift; sourceTree = "<group>"; };
+		DD3515F82618FBDF0086F65B /* FallacyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyData.swift; sourceTree = "<group>"; };
 		DD372E792618AF7700323B0C /* DailyFallacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFallacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD372E7C2618AF7700323B0C /* DailyFallacyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFallacyApp.swift; sourceTree = "<group>"; };
 		DD372E7E2618AF7700323B0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD372E802618AF7900323B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD372E832618AF7900323B0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DD372E852618AF7900323B0C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		DD372E882618AF7900323B0C /* DailyFallacy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyFallacy.xcdatamodel; sourceTree = "<group>"; };
 		DD372E8A2618AF7900323B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD372E8F2618AF7A00323B0C /* DailyFallacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFallacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD372E932618AF7A00323B0C /* DailyFallacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFallacyTests.swift; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		DD372E9A2618AF7A00323B0C /* DailyFallacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyFallacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD372E9E2618AF7A00323B0C /* DailyFallacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFallacyUITests.swift; sourceTree = "<group>"; };
 		DD372EA02618AF7A00323B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyRowView.swift; sourceTree = "<group>"; };
+		DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyDetailView.swift; sourceTree = "<group>"; };
+		DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBubble.swift; sourceTree = "<group>"; };
+		DD3BF180261A381300FBDE77 /* FallacyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyHeaderView.swift; sourceTree = "<group>"; };
+		DD3BF185261A489400FBDE77 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DD3BF18D261EE64F00FBDE77 /* FallacyShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyShowView.swift; sourceTree = "<group>"; };
+		DD3BF198261F3B5000FBDE77 /* AnswerBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBubble.swift; sourceTree = "<group>"; };
+		DD428CEC2618B33B003AA614 /* FallacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD3515EE2618FAEE0086F65B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD3515EF2618FAFE0086F65B /* Fallacy.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DD3515F72618FBC30086F65B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD3515F82618FBDF0086F65B /* FallacyData.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		DD372E702618AF7700323B0C = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +131,12 @@
 		DD372E7B2618AF7700323B0C /* DailyFallacy */ = {
 			isa = PBXGroup;
 			children = (
-				DD372E7C2618AF7700323B0C /* DailyFallacyApp.swift */,
-				DD372E7E2618AF7700323B0C /* ContentView.swift */,
+				DD3515F72618FBC30086F65B /* Data */,
+				DD3515EE2618FAEE0086F65B /* Models */,
+				DD428CEB2618B2FE003AA614 /* View */,
+				DD428CEA2618B2F7003AA614 /* App */,
 				DD372E802618AF7900323B0C /* Assets.xcassets */,
-				DD372E852618AF7900323B0C /* Persistence.swift */,
 				DD372E8A2618AF7900323B0C /* Info.plist */,
-				DD372E872618AF7900323B0C /* DailyFallacy.xcdatamodeld */,
 				DD372E822618AF7900323B0C /* Preview Content */,
 			);
 			path = DailyFallacy;
@@ -134,6 +166,30 @@
 				DD372EA02618AF7A00323B0C /* Info.plist */,
 			);
 			path = DailyFallacyUITests;
+			sourceTree = "<group>";
+		};
+		DD428CEA2618B2F7003AA614 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD372E7E2618AF7700323B0C /* ContentView.swift */,
+				DD372E7C2618AF7700323B0C /* DailyFallacyApp.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		DD428CEB2618B2FE003AA614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD428CEC2618B33B003AA614 /* FallacyView.swift */,
+				DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */,
+				DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */,
+				DD3BF185261A489400FBDE77 /* SettingsView.swift */,
+				DD3BF18D261EE64F00FBDE77 /* FallacyShowView.swift */,
+				DD3BF180261A381300FBDE77 /* FallacyHeaderView.swift */,
+				DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */,
+				DD3BF198261F3B5000FBDE77 /* AnswerBubble.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD372E892618AF7900323B0C /* DailyFallacy.xcdatamodeld in Sources */,
-				DD372E862618AF7900323B0C /* Persistence.swift in Sources */,
+				DD3BF16C261A0D7400FBDE77 /* FallacyRowView.swift in Sources */,
+				DD3515F02618FAFE0086F65B /* Fallacy.swift in Sources */,
+				DD3BF181261A381300FBDE77 /* FallacyHeaderView.swift in Sources */,
+				DD3BF174261A17DE00FBDE77 /* FallacyDetailView.swift in Sources */,
+				DD3BF17C261A34B700FBDE77 /* ExampleBubble.swift in Sources */,
+				DD3BF18E261EE64F00FBDE77 /* FallacyShowView.swift in Sources */,
+				DD428CED2618B33B003AA614 /* FallacyView.swift in Sources */,
 				DD372E7F2618AF7700323B0C /* ContentView.swift in Sources */,
 				DD372E7D2618AF7700323B0C /* DailyFallacyApp.swift in Sources */,
+				DD3BF199261F3B5000FBDE77 /* AnswerBubble.swift in Sources */,
+				DD3515F92618FBDF0086F65B /* FallacyData.swift in Sources */,
+				DD3BF186261A489400FBDE77 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,19 +652,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DD372E872618AF7900323B0C /* DailyFallacy.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DD372E882618AF7900323B0C /* DailyFallacy.xcdatamodel */,
-			);
-			currentVersion = DD372E882618AF7900323B0C /* DailyFallacy.xcdatamodel */;
-			path = DailyFallacy.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DD372E712618AF7700323B0C /* Project object */;
 }
