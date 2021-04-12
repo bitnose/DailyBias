@@ -76,19 +76,16 @@ struct FallacyDetailView: View {
                             .multilineTextAlignment(.leading)
                             .padding()
                         
-                        GroupBox {
                         
                         // CATEGORIES
-                        VStack(alignment: .leading) {
+                        VStack(alignment: .center) {
 
-                            Text("Appeal to Emotion".uppercased())
-                            Text("Faulty Deduction".uppercased())
-                            Text("GARBLED CAUSE & EFFECT".uppercased())
-
+                            ForEach(fallacy.categories, id: \.self) { item in
+                                CategoryView(category: item)
+                            }// : LOOP
                         } //: VSTACK
-                        .font(.system(size: 12, weight: .thin, design: .rounded))
                         .padding(.bottom, 20)
-                        }
+                        
                     } //: VSTACK
                    
                     .padding(.horizontal, 20)

@@ -12,47 +12,42 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     var fallacies: [Fallacy] = fallacyData
     
-    
-//    @Environment(\.managedObjectContext) private var viewContext
-//
-//    @FetchRequest(
-//        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-//        animation: .default)
-//    private var items: FetchedResults<Item>
-
     // MARK: - BODY
     var body: some View {
         
-        NavigationView {
-            
-            FallacyShowView(fallacy: fallacies[0])
-            
-            ScrollView {
-                LazyVStack(spacing: 1) {
-                    
-                    ForEach(fallacies) { item in
+        ZStack {
+            VStack(spacing: 0) {
+                
+                NavigationBarView()
+                    .padding()
+                    .background(Color.white)
+                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
+                
+                
+                Spacer()
+                
+                FallacyShowView(fallacy: fallacies[0])
+                
+                ScrollView {
+                    LazyVStack(spacing: 1) {
                         
-                        NavigationLink(destination: FallacyDetailView(fallacy: item)) {
-                            FallacyRowView(fallacy: item)
-       
-                        } //: NAVIGATION LINK
-                        .buttonStyle(PlainButtonStyle())
-                    }
-                } //: LAZYVSTACK
-            } //: SCROLLVIEW
-           
-            .navigationTitle("Fallacy")
-            .navigationBarTitleDisplayMode(.inline)
-           
-                    
-        } //: NAVIGATION
-      
-        
-      
+                        ForEach(fallacies) { item in
+                            
+    //                        NavigationLink(destination: FallacyDetailView(fallacy: item)) {
+    //                            FallacyRowView(fallacy: item)
+    //
+    //                        } //: NAVIGATION LINK
+    //                        .buttonStyle(PlainButtonStyle())
+                        }
+                    } //: LAZYVSTACK
+                } //: SCROLLVIEW
+               
+                .navigationTitle("Daily Bias")
+                .navigationBarTitleDisplayMode(.inline)
             
-        
-        
-        
+            } //: VSTACK
+        } // : ZSTACK
+        .ignoresSafeArea(.all, edges: .top)
     }
 }
 

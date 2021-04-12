@@ -17,14 +17,6 @@ struct FallacyShowView: View {
     var body: some View {
 
             
-            
-            
-
-            
-            // IMAGE
-            
-            
-            
         NavigationView {
             VStack(alignment: .center, spacing: 20) {
                     
@@ -44,6 +36,7 @@ struct FallacyShowView: View {
                             ForEach(fallacy.categories, id: \.self) { item in
 
                                 CategoryView(category: item)
+                                
                                     
                             } //: VSTACK
                             
@@ -123,6 +116,7 @@ struct FallacyShowView: View {
                                 .background(Color.blue)
                                 .clipShape(AnswerBubble())
                                 .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 2, x: 2, y: 2)
+                                
                                 
                         }
                         

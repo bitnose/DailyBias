@@ -18,6 +18,9 @@
 		DD393CB52620EFF600EC3F96 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CB42620EFF600EC3F96 /* Category.swift */; };
 		DD393CBA2620F2A500EC3F96 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CB92620F2A500EC3F96 /* CategoryData.swift */; };
 		DD393CBF2620F6AE00EC3F96 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CBE2620F6AE00EC3F96 /* CategoryView.swift */; };
+		DD393CC426218F0D00EC3F96 /* CategoryBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD393CC326218F0D00EC3F96 /* CategoryBubbleView.swift */; };
+		DD3968032624800B004BBE9D /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3968022624800B004BBE9D /* LogoView.swift */; };
+		DD3968162624846C004BBE9D /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3968152624846C004BBE9D /* NavigationBarView.swift */; };
 		DD3BF16C261A0D7400FBDE77 /* FallacyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */; };
 		DD3BF174261A17DE00FBDE77 /* FallacyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */; };
 		DD3BF17C261A34B700FBDE77 /* ExampleBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */; };
@@ -63,6 +66,9 @@
 		DD393CB42620EFF600EC3F96 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		DD393CB92620F2A500EC3F96 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		DD393CBE2620F6AE00EC3F96 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		DD393CC326218F0D00EC3F96 /* CategoryBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBubbleView.swift; sourceTree = "<group>"; };
+		DD3968022624800B004BBE9D /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		DD3968152624846C004BBE9D /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyRowView.swift; sourceTree = "<group>"; };
 		DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallacyDetailView.swift; sourceTree = "<group>"; };
 		DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBubble.swift; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		DD428CEB2618B2FE003AA614 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD3968022624800B004BBE9D /* LogoView.swift */,
 				DD428CEC2618B33B003AA614 /* FallacyView.swift */,
 				DD3BF16B261A0D7400FBDE77 /* FallacyRowView.swift */,
 				DD3BF173261A17DE00FBDE77 /* FallacyDetailView.swift */,
@@ -196,7 +203,9 @@
 				DD3BF18D261EE64F00FBDE77 /* FallacyShowView.swift */,
 				DD3BF180261A381300FBDE77 /* FallacyHeaderView.swift */,
 				DD3BF17B261A34B700FBDE77 /* ExampleBubble.swift */,
+				DD393CC326218F0D00EC3F96 /* CategoryBubbleView.swift */,
 				DD3BF198261F3B5000FBDE77 /* AnswerBubble.swift */,
+				DD3968152624846C004BBE9D /* NavigationBarView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -331,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3BF16C261A0D7400FBDE77 /* FallacyRowView.swift in Sources */,
+				DD3968032624800B004BBE9D /* LogoView.swift in Sources */,
 				DD393CBA2620F2A500EC3F96 /* CategoryData.swift in Sources */,
 				DD3515F02618FAFE0086F65B /* Fallacy.swift in Sources */,
 				DD3BF181261A381300FBDE77 /* FallacyHeaderView.swift in Sources */,
@@ -338,6 +348,8 @@
 				DD3BF17C261A34B700FBDE77 /* ExampleBubble.swift in Sources */,
 				DD3BF18E261EE64F00FBDE77 /* FallacyShowView.swift in Sources */,
 				DD428CED2618B33B003AA614 /* FallacyView.swift in Sources */,
+				DD3968162624846C004BBE9D /* NavigationBarView.swift in Sources */,
+				DD393CC426218F0D00EC3F96 /* CategoryBubbleView.swift in Sources */,
 				DD372E7F2618AF7700323B0C /* ContentView.swift in Sources */,
 				DD372E7D2618AF7700323B0C /* DailyFallacyApp.swift in Sources */,
 				DD393CB52620EFF600EC3F96 /* Category.swift in Sources */,

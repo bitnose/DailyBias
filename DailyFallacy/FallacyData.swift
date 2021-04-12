@@ -31,7 +31,7 @@ As soon as you spot someone coming after you with an ad hominem argument, you ca
             orderNumber: 1,
             aliases: ["Personal attack", "Poisoning the well", "argumentum ad hominem in Latin"],
             opposite: [],
-            categories: [categories[5], categories[1], categories[3]]),
+            categories: [categories[5], categories[1], categories[4]]),
     
     Fallacy(title: "The Positive Thinking Fallacy",
             shortDescription: "The fallacy of attempting to refute an argument by attacking the opposition’s intelligence, morals, education, professional qualifications, personal character or reputation, using a corrupted negative argument from ethos.",
