@@ -18,7 +18,7 @@ struct NavigationBarView: View {
             
             Button(action: {}, label: {
                 Image(systemName: "magnifyingglass")
-                    .font(.title)
+                    .font(.headline)
                     .foregroundColor(.black)
             }) //: SEARCH BUTTON
             Spacer()
@@ -36,7 +36,7 @@ struct NavigationBarView: View {
             
             Button(action: {}, label: {
                 Image(systemName: "text.justifyright")
-                    .font(.title)
+                    .font(.headline)
                     .foregroundColor(.black)
             }) //: SETTINGS BUTTON
             

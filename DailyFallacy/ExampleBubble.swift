@@ -14,7 +14,6 @@ struct ExampleBubble : Shape {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: 15, height: 15))
         return Path(path.cgPath)
     }
-    
 }
 
 

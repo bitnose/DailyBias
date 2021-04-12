@@ -39,9 +39,7 @@ struct FallacyRowView: View {
                     .padding(.horizontal)
                 
             } // : VSTACK
-            
             .padding(30)
-            
         } //: HSTACK  
     }
 }

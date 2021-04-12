@@ -14,19 +14,16 @@ struct CategoryBubbleView: View {
         
         Path { path in
             
-               path.move(to: CGPoint(x: 100, y: 0))
-               path.addLine(to: CGPoint(x: 300, y: 0))
-               path.addLine(to: CGPoint(x: 300, y: 80))
-               path.addLine(to: CGPoint(x: 50, y: 80))
-                path.addLine(to: CGPoint(x:50, y: 60))
+            path.move(to: CGPoint(x: 100, y: 0))
+            path.addLine(to: CGPoint(x: 300, y: 0))
+            path.addLine(to: CGPoint(x: 300, y: 80))
+            path.addLine(to: CGPoint(x: 50, y: 80))
             path.addLine(to: CGPoint(x:50, y: 60))
-            
-              
-           }
+            path.addLine(to: CGPoint(x:50, y: 60))
+            }
         
         .stroke(Color.secondary, style: StrokeStyle(lineWidth: 1, lineCap: .round, lineJoin: .round))
         .padding()
-
     }
 }
 

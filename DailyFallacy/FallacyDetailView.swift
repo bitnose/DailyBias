@@ -10,40 +10,44 @@ import SwiftUI
 struct FallacyDetailView: View {
     
     // MARK: - PROPERTIES
-    var fallacy: Fallacy
+    @EnvironmentObject var library: Library
     
     // MARK: - BODY
     var body: some View {
         
-        NavigationView {
+        VStack {
             
+            // NAV BAR
+            NavigationBarDetailView()
+                .padding(.horizontal)
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             
-            
+            // SCROLL
             ScrollView(.vertical, showsIndicators: false) {
                 
                 VStack(alignment: .center, spacing: 20) {
        
                     // HEADER
-                    FallacyHeaderView(fallacy: fallacy)
+                    FallacyHeaderView(fallacy: library.wrappedFallacy)
                     
                     VStack(alignment: .center, spacing: 15) {
                 
                         // TITLE
-                        Text(fallacy.title.uppercased())
+                        Text(library.wrappedFallacy.title.uppercased())
                            
                             .font(.system(size: 18, weight: .medium, design: .monospaced))
                        //     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.1), radius: 1, x: 1, y: 1)
                             .multilineTextAlignment(.center)
                         
                         // SHORT
-                        Text(fallacy.shortDescription)
+                        Text(library.wrappedFallacy.shortDescription)
                             .font(.system(size: 12, weight: .light, design: .rounded))
                             .multilineTextAlignment(.leading)
                         
                         // EXAMPLES
  
                         VStack(alignment: .leading) {
-                                ForEach(fallacy.examples.prefix(3), id: \.self) { item in
+                                ForEach(library.wrappedFallacy.examples.prefix(3), id: \.self) { item in
 
                                         Text(#"\#(item)"#)
                                             
@@ -71,7 +75,7 @@ struct FallacyDetailView: View {
                             .padding()
                            
                         // LONG
-                        Text(fallacy.longDescription)
+                        Text(library.wrappedFallacy.longDescription)
                             .font(.system(size: 12, weight: .thin, design: .rounded))
                             .multilineTextAlignment(.leading)
                             .padding()
@@ -80,7 +84,7 @@ struct FallacyDetailView: View {
                         // CATEGORIES
                         VStack(alignment: .center) {
 
-                            ForEach(fallacy.categories, id: \.self) { item in
+                            ForEach(library.wrappedFallacy.categories, id: \.self) { item in
                                 CategoryView(category: item)
                             }// : LOOP
                         } //: VSTACK
@@ -91,17 +95,15 @@ struct FallacyDetailView: View {
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)
                 }//: VSTACK
-                .padding()
-                .navigationBarTitle(fallacy.title, displayMode: .inline)
-                .navigationBarHidden(true)
-                .edgesIgnoringSafeArea(.top)
             } //: SCROLL
-        } //: NAVIGATION
+        } //: VSTACK
+        .ignoresSafeArea(.all, edges: .all)
     }
 }
 
 struct FallacyDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FallacyDetailView(fallacy: fallacyData[0])
+        FallacyDetailView()
+            .environmentObject(Library())
     }
 }
