@@ -10,8 +10,9 @@ import SwiftUI
 // MARK: - Category
 
 
-struct Category: Identifiable, Hashable {
-    let id = UUID()
+struct Category: Identifiable, Hashable, Codable {
+    
+    var id = UUID()
     let name : String
     let description: String
 //  let color: String

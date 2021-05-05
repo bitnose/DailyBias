@@ -44,10 +44,10 @@ struct FallacyRowView: View {
     }
 }
 
+// MARK: - PREVIEW
 struct FallacyRowView_Previews: PreviewProvider {
     static var previews: some View {
         FallacyRowView(fallacy: fallacyData[0])
-            
         
     }
 }

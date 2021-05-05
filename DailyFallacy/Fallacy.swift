@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - FALLACY MODEL
 
-struct Fallacy: Identifiable {
+struct Fallacy: Identifiable, Equatable, Codable {
     
     var id = UUID()
     var title : String
@@ -35,4 +35,5 @@ struct Fallacy: Identifiable {
     // Start a counter and add +1 each day --> Use this to show the correct data!
     
 }
+
 

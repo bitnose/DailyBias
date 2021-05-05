@@ -10,14 +10,24 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: - PROPERTIES
-    var fallacies: [Fallacy] = fallacyData
     @EnvironmentObject var library: Library
+  
     
     // MARK: - BODY
     var body: some View {
         
         ZStack {
-            if library.showingFallacy == false && library.selectedFallacy == nil {
+
+            // MARK: - FALLACY VIEW
+            if library.dailyFallacyDone == true && library.showingFallacy == true && library.selectedFallacy != nil {
+                FallacyDetailView()
+                
+            // MARK: - FALLACY SHOW
+            } else if library.dailyFallacyDone == false {
+                FallacyShowView()
+                
+            // MARK: - CONTENT VIEW
+            } else {
                 VStack(spacing: 0) {
                     
                     NavigationBarView()
@@ -31,7 +41,10 @@ struct ContentView: View {
            
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVStack(spacing: 1) {
-                            ForEach(fallacies) { item in
+                            ForEach(library.fallacies) { item in
+                                
+                              
+                                
                                 FallacyRowView(fallacy: item)
                                     .onTapGesture {
                                         withAnimation(.easeOut) {
@@ -39,14 +52,33 @@ struct ContentView: View {
                                             library.showingFallacy = true
                                         }
                                     }
+                                Divider()
+                                    .padding(.horizontal)
+                                
                                  } // : LOOP
-                            .padding()
+                           
                         } //: LAZYVSTACK
                     } //: SCROLLVIEW
-                }
-            } else {
-                FallacyDetailView()
-            } //: VSTACK
+                    
+                    Button(action: {
+                        
+                        library.updateDailyFallacy()
+                        library.dailyFallacyDone = false
+                        
+                    }, label: {
+                        
+                          Text("NEW BIAS")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 12, weight: .light, design: .monospaced))
+                            .underline(true, color: Color.blue)
+  
+                    })
+                    .padding(.bottom, 20)
+                }  //: VSTACK
+            } // ELSE
+            
+            
+           
         } // : ZSTACK
         .ignoresSafeArea(.all, edges: .top)
     }
@@ -55,7 +87,26 @@ struct ContentView: View {
 // MARK: - PREVIEW
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(fallacies: fallacyData)
+        ContentView()
             .environmentObject(Library())
     }
 }
+
+
+/*
+ Home View
+ - If showing the fallacy is false
+ - if there are no selected fallacy
+ - if dailyFallacyDone is true
+ 
+ Fallacy Show
+ - if dailyFallacyDone is false
+ 
+ Detail View
+ - If showing the fallacy is false
+ - if there are no selected fallacy
+
+ 
+ */
+
+

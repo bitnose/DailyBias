@@ -30,7 +30,16 @@ struct NavigationBarDetailView: View {
                    
             Spacer()
 
-            Button(action: {}, label: {
+            Button(action: {
+                
+                withAnimation(.easeIn) {
+                    library.selectedFallacy = nil
+                    library.showingFallacy = true
+                    
+                }
+                
+                
+            }, label: {
                 Image(systemName: "play.circle")
                     .font(.headline)
                     .foregroundColor(.black)

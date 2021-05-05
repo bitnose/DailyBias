@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct DailyFallacyApp: App {
 
+    @StateObject var library = Library()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(Library())
+                .environmentObject(library)
                
         }
     }

@@ -16,12 +16,7 @@ struct LogoView: View {
     var body: some View {
         
         HStack {
-            
-//            Image("logo-text")
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 60, height: 60, alignment: .center)
-//            
+                        
             Image("logo")
                 .resizable()
                 .scaledToFit()

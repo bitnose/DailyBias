@@ -25,12 +25,12 @@ struct FallacyDetailView: View {
             // SCROLL
             ScrollView(.vertical, showsIndicators: false) {
                 
-                VStack(alignment: .center, spacing: 20) {
+                VStack(spacing: 20) {
        
-                    // HEADER
+                    // IMAGE
                     FallacyHeaderView(fallacy: library.wrappedFallacy)
                     
-                    VStack(alignment: .center, spacing: 15) {
+                    VStack(spacing: 15) {
                 
                         // TITLE
                         Text(library.wrappedFallacy.title.uppercased())
@@ -39,10 +39,18 @@ struct FallacyDetailView: View {
                        //     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.1), radius: 1, x: 1, y: 1)
                             .multilineTextAlignment(.center)
                         
+                      
+                           
+                        
+                        
                         // SHORT
                         Text(library.wrappedFallacy.shortDescription)
-                            .font(.system(size: 12, weight: .light, design: .rounded))
+                            .font(.system(size: 14, weight: .light, design: .rounded))
                             .multilineTextAlignment(.leading)
+                            .padding(.bottom, 20)
+                            .padding(.top, 20)
+                            
+                       
                         
                         // EXAMPLES
  
@@ -51,51 +59,101 @@ struct FallacyDetailView: View {
 
                                         Text(#"\#(item)"#)
                                             
-                                            .fontWeight(.regular)
-                                            .font(.system(size: 12, weight: .light, design: .rounded))
+                                            .font(.system(size: 14, weight: .light, design: .rounded))
                                             .foregroundColor(.white)
                                             .padding()
                                             .lineLimit(4)
                                             .background(Color.black)
                                             .clipShape(ExampleBubble())
                                             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 2, x: 2, y: 2)
-                                }
-                            } //: VSTACK
-                            .padding()
-                        
+                            }
+                        } //: VSTACK
+                            .frame(width: 300, alignment: .leading)
+                   
+                        // ANSWERS
+                        VStack(alignment: .trailing) {
+                        ForEach(library.wrappedFallacy.wrappedAnswer.prefix(3), id: \.self) { item in
 
+                            Text(#"\#(item)"#)
+
+                                .font(.system(size: 14, weight: .light, design: .rounded))
+                                .foregroundColor(.white)
+                                .padding()
+                                .lineLimit(4)
+                                .background(Color.blue)
+                                .clipShape(AnswerBubble())
+                                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 2, x: 2, y: 2)
+
+                            }
+                            
+                        } //: VSTACK
+                            .frame(width: 300, alignment: .trailing)
+                      
+ 
+                        Spacer()
                         
-                        // ALIASES
-                        
-                        // CATEGORIES
+    
+                   
                         
                         Text("LEARN MORE...")
                             .foregroundColor(.blue)
-                            .font(.system(size: 12, weight: .medium, design: .monospaced))
+                            .font(.system(size: 14, weight: .medium, design: .monospaced))
                             .padding()
                            
                         // LONG
                         Text(library.wrappedFallacy.longDescription)
-                            .font(.system(size: 12, weight: .thin, design: .rounded))
+                            .font(.system(size: 14, weight: .thin, design: .rounded))
                             .multilineTextAlignment(.leading)
-                            .padding()
+                            .padding(.horizontal, 20)
+                            .padding(.bottom, 20)
+                        
+                       
+                        
+                        // ALIASES
+                        VStack(alignment: .center) {
+                            
+                            Text("ALSO KNOWN AS:")
+                                .foregroundColor(.blue)
+                                .font(.system(size: 14, weight: .medium, design: .monospaced))
+                                .padding(.bottom, 10)
+                               
+                            
+                            ForEach(library.wrappedFallacy.aliases, id: \.self) { item in
+
+                                Text(#"\#(item)"#)
+                                    .font(.system(size: 14, weight: .thin, design: .rounded))
+                                    .foregroundColor(.black)
+                                    
+                            }
+                        } //: VSTACK
+                        .padding()
+                        
+                        Text("AFFECTS ON...")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 14, weight: .medium, design: .monospaced))
+                            .padding(.top, 30)
+                           
+                        
                         
                         
                         // CATEGORIES
                         VStack(alignment: .center) {
 
                             ForEach(library.wrappedFallacy.categories, id: \.self) { item in
-                                CategoryView(category: item)
+                                CategoryCellView(category: item)
+                                   
+                                    
                             }// : LOOP
                         } //: VSTACK
-                        .padding(.bottom, 20)
+                        
                         
                     } //: VSTACK
                    
-                    .padding(.horizontal, 20)
-                    .frame(maxWidth: 640, alignment: .center)
+                    .padding(.horizontal, 25)
+                    .padding(.bottom, 20)
                 }//: VSTACK
             } //: SCROLL
+            .padding(.bottom, 30)
         } //: VSTACK
         .ignoresSafeArea(.all, edges: .all)
     }
